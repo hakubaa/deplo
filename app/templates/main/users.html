@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="container">
+        <div class="page-header">
+            <h1>deplo</h1>
+            <small>Testing Deployment</small>
+        </div>
+        <h4>List of registered users</h4>
+        <ul class="list-group">
+            {% for user in users %}
+                <li class="list-group-item">{{ user.username }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
