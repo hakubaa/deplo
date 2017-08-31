@@ -6,3 +6,4 @@ __pycache__
 *.sublime-project
 *.db*
 migrations/versions
+temp

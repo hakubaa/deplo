@@ -1,20 +1,15 @@
-<!doctype html>
+{% extends "base.html" %}
 
-<html>
-
-<head>
-    <title>deplo - Deployment Testing</title>
-</head>
-
-<body>
-    <h1>deplo</h1>
-    <hr/>
-    <p>Testing deployment:</p>
-    <ul>
-        <li>nginx</li>
-        <li>gunicorn</li>
-        <li>python (+flask)</li>
-    </ul>
-</body>
-
-</html>
+{% block body %}
+    <div class="container">
+        <div class="page-header">
+            <h1>deplo</h1>
+            <small>Testing Deployment</small>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-success">nginx</li>
+            <li class="list-group-item list-group-item-warning">gunicorn</li>
+            <li class="list-group-item list-group-item-danger">python (+flask)</li>
+        </ul>
+    </div>
+{% endblock %}
